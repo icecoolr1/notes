@@ -1,0 +1,199 @@
+ [{
+         "targets": ["132.224.132.121:30001"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.60",
+             "component_name": "分布式缓存",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30002"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.54",
+             "component_name": "分布式缓存",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30003"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.44",
+             "component_name": "分布式缓存",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30004"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.39",
+             "component_name": "分布式缓存",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30005"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.26",
+             "component_name": "分布式缓存",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30006"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.24",
+             "component_name": "分布式缓存",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30007"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.57",
+             "component_name": "数据库",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30008"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.37",
+             "component_name": "数据库",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30009"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.29",
+             "component_name": "数据库",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30010"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.23",
+             "component_name": "分布式消息",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30011"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.27",
+             "component_name": "分布式消息",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30012"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.33",
+             "component_name": "分布式消息",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30013"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.10",
+             "component_name": "文本服务器",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30014"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.31",
+             "component_name": "监控告警",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30015"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.22",
+             "component_name": "容器平台",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30016"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.25",
+             "component_name": "应用服务器",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30017"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.21",
+             "component_name": "产品/订单/支付服务器",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     },
+     {
+         "targets": ["132.224.132.121:30018"],
+         "labels": {
+             "app_id": "2",
+             "app_name": "外部主机监控",
+             "host_ip": "172.31.0.9",
+             "component_name": "产品/订单/支付服务器",
+             "component_id": "5",
+            "component_type": "node"
+         }
+     }
+ ]

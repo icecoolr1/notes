@@ -1,0 +1,109 @@
+# 开发与命名规范
+
+## 命名规范
+- 模块名：大写
+- 文件名: 小写
+- 变量名：驼峰命名
+---
+## 开发流程
+1. 需求分析
+2. 设计数据库
+3. 约定接口规范
+4. 开发接口
+5. 开发rpc
+---
+
+
+## redis连接
+- 机器ip: 47.107.112.81(阿里云:深圳)
+- 密码:123456 
+```go
+package main
+
+import (
+	"github.com/go-redis/redis"
+	"time"
+)
+
+func main() {
+
+	client := redis.NewClient(&redis.Options{
+		Addr:     "47.107.112.81:6379",
+		Password: "Wy20001976",
+		DB:       0, // use default DB
+	})
+
+	//pong, err := client.Ping().Result()
+	//fmt.Println(pong, err)
+
+	// 设置 key与value 第三个参数为过期时间
+	err := client.Set("test2", "vwww", 10*time.Second).Err()
+	if err != nil {
+		panic(err)
+	}
+	//err = client.Del("test").Err()
+	//if err != nil {
+	//	panic(err)
+	//}
+	// val, err := client.Get("key").Result()
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// fmt.Println("key", val)
+
+	// val2, err := client.Get("key2").Result()
+	// if err == redis.Nil {
+	// 	fmt.Println("key2 does not exists")
+	// } else if err != nil {
+	// 	panic(err)
+	// } else {
+	// 	fmt.Println("key2", val2)
+	// }
+}
+
+```
+
+## mysql连接
+- 机器ip: 47.103.7.74(阿里云:上海)
+- 密码: @Password123
+```go
+package tools
+
+import (
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
+	"gorm.io/gorm/schema"
+	"time"
+)
+
+
+func GetDatabaseConnection() *gorm.DB{
+	//dsn := "root:password@tcp(127.0.0.1:3306)/gorm_test?charset=utf8mb4&parseTime=True&loc=Local"
+	db, _ := gorm.Open(mysql.New(mysql.Config{
+		DSN:                   	"root:password@tcp(127.0.0.1:3306)/gorm_test?charset=utf8mb4&parseTime=True&loc=Local",
+		DefaultStringSize: 176,
+	}), &gorm.Config{
+		SkipDefaultTransaction: false,
+		NamingStrategy: schema.NamingStrategy{
+			TablePrefix: "t_",
+			SingularTable: false,
+			NoLowerCase:   true,
+		},
+		DisableForeignKeyConstraintWhenMigrating: true,
+	})
+
+	sqlDB, _ := db.DB()
+	// SetMaxIdleConns 用于设置连接池中空闲连接的最大数量。
+	sqlDB.SetMaxIdleConns(10)
+	// SetMaxOpenConns 设置打开数据库连接的最大数量。
+	sqlDB.SetMaxOpenConns(100)
+	// SetConnMaxLifetime 设置了连接可复用的最大时间。
+	sqlDB.SetConnMaxLifetime(time.Hour)
+	return db
+	//etity.TestCreate()
+}
+```
+## 服务部署机器
+- 机器ip: 124.221.155.122
+
+* 内 10.0.16.10
