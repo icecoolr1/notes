@@ -29,7 +29,7 @@ func main() {
 
 	client := redis.NewClient(&redis.Options{
 		Addr:     "47.107.112.81:6379",
-		Password: "Wy20001976",
+		Password: "******",
 		DB:       0, // use default DB
 	})
 
